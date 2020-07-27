@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 
 :root {
     --color-green: #50fa7b;
-    --color-rocket: #7159c1;
+    --color-rocket: #0d011d;
 }
 
 
@@ -51,16 +51,19 @@ header div {
 }
 
 #wrapper img {
-    border-radius: 50%;
-    border: 5px solid  var(--color-green);
+    border-radius: 20px;
+    padding: 50px;
+    border: 2px solid var(--color-green);
     margin-bottom: 32px;
-    height: 200px;
+    width: 400px;
 }
 
 #wrapper h1 {
     font-size:42px;
     line-height: 52px;
     font-weight: bold;
+    text-align: center;
+    padding: 32px
 }
 
 #wrapper h2 {
@@ -71,11 +74,22 @@ header div {
     opacity: 0.8;
 }
 
-#wrapper p {
+.techs{
+    margin-top: 34px;    
+}
+
+#wrapper h4 {
     max-width: 500px;
-    margin: 32px auto;
+    margin: 2px auto;
+    margin-bottom: 10px;
     font-size: 24px;
     line-height: 34px;
+}
+
+#wrapper ul li {
+    font-size: 18px;
+    margin: 5px auto;
+    list-style-type: none;
 }
 
 #wrapper p a {
@@ -86,8 +100,7 @@ header div {
     border-bottom: 1px solid var(--color-green);
 }
 
-
-/*==CARDS==*/
+/*=== CARDS ===*/
 
 .cards {
     max-width: 800px;
@@ -98,29 +111,32 @@ header div {
 }
 
 .card {
+    padding: 12px;
     background-color: var(--color-rocket);
 }
 
 .card__image-container img {
     width: 100%;
+    min-height: 150px;
 }
 
-.card__content,
-.card__info {
-    padding: 24px
+.card-content,
+.card-info {
+    padding: 24px;
 }
 
-.card__info {
+.card-info{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap:80px;
 }
 
-.card__price {
+.card-price {
     background-color: var(--color-rocket);
     filter: brightness(90%);
-    padding: 5px 20px;
     border-radius: 20px;
     text-align: center;
+    
 }
 
 /*=== MODAL ===*/
@@ -143,15 +159,13 @@ header div {
 
 }
 
-.modal .close-modal {
+.modal .butt {
     color: black;
     position: absolute;
     right: 8px;
     top: 8px;
     cursor: pointer    
 }
-
-
 
 .modal-overlay.active {
     opacity: 1;
@@ -163,4 +177,8 @@ iframe {
     height: 90%;
     position: absolute;
     top: 5%;
+}
+
+.maximize {
+    height: 100%;
 }

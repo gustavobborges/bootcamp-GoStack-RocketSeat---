@@ -20,4 +20,3 @@ document.querySelector(".max-modal").addEventListener("click", function() {
     modalOverlay.classList.contains("maximize")
     modalOverlay.querySelector("iframe").src=""
 })
-

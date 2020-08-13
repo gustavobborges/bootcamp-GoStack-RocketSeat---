@@ -2,7 +2,7 @@
 
 :root {
     --color-green: #50fa7b;
-    --color-rocket: #0d011d;
+    --color-rocket: #7159c1;
 }
 
 
@@ -122,7 +122,7 @@ header div a {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px
+    gap: 25px
 }
 
 .card {
@@ -146,7 +146,6 @@ header div a {
 }
 
 .conteudo_card {
-    border: white 2px solid;
     border-radius: 40px;
     height: 170px;
     vertical-align: middle;
@@ -174,7 +173,11 @@ header div a {
     filter: brightness(90%);
     border-radius: 20px;
     text-align: center;
-    
+}
+
+.card-price p {
+    vertical-align: middle;
+    margin-top: 15%;
 }
 
 /*=== MODAL ===*/

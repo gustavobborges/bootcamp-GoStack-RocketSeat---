@@ -1,25 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="icon" href="tech.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="/public/style.css">
+{% extends "layout.html" %}
 
-</head>
-<body>
-    <header>
-        <div class=links>
-            <a href="https://discordapp.com/invite/gCRAFhc">Comunidade</a>
-            <a href="mailto:oi@rocketseat.com.br">Email</a>
-            <a href="tel:+5547992078767">Telefone</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="conteudos.html">Conteúdos</a>
+{% block head%}
+    <title>Sobre - Gustavo Borges</title>
+{% endblock %}
 
-        </div>
-    </header>
- 
+{% block content %}
+
     <div id="wrapper">
         <img src="https://yt3.ggpht.com/a/AATXAJwSX58F1bJzQBZYiioJa36NuvznvNpsEVDfmc7qfg=s900-c-k-c0xffffffff-no-rj-mo" alt="RocketSeat">
         <h1>RocketSeat</h1>
@@ -39,7 +25,9 @@
     <div id="links-footer" class="links">
         <a href="https://www.github.com/gustavobborges" target="__blank">Github</a>
         <a href="https://www.linkedin.com/in/gustavo-de-borja-borges-962726145/" target="__blank" >Linkedin</a>
-        </div>
+    </div>
+
+{% endblock %}
 
 </body>
 </html>

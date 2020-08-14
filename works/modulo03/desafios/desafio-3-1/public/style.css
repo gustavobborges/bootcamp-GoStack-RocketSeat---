@@ -227,3 +227,9 @@ iframe {
 .footer-empty{
     min-height: 100px;
 }
+
+.error {
+    height: 100%;
+    text-align: center;
+    padding-top: 200px;
+}

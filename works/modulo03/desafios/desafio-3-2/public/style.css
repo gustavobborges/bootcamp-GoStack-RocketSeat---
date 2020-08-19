@@ -2,6 +2,7 @@
 
 :root {
     --color-green: #50fa7b;
+    --color-background: #21213d;
     --color-rocket: #7159c1;
 }
 
@@ -127,7 +128,8 @@ header div a {
 
 .card {
     padding: 12px;
-    background-color: var(--color-rocket);
+    background-color: var(--color-background);
+    border: 3px var(--color-rocket) solid;
     height: 420px;
     width: 250px;
     border-radius: 20px;
@@ -141,8 +143,9 @@ header div a {
 
 .card__image-container img {
     height: 200px;
-    width: 250px;
-    min-height: 150px;    
+    width: 220px;
+    min-height: 150px;
+    padding: 15px;
 }
 
 .conteudo_card {
@@ -160,24 +163,22 @@ header div a {
 
 .card-info {
     padding: 24px;
+    
 }
 
 .card-info{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:80px;
+    align-items: center;
+    gap: 25px;
 }
 
 .card-price {
     background-color: var(--color-rocket);
     filter: brightness(90%);
+    padding: 5px 20px;
     border-radius: 20px;
     text-align: center;
-}
-
-.card-price p {
-    vertical-align: middle;
-    margin-top: 15%;
 }
 
 /*=== MODAL ===*/

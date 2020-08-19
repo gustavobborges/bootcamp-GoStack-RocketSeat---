@@ -12,83 +12,20 @@
     </div>
 
     <section class="cards"> 
-        <div class="card" id="GykTLqODQuU">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/GykTLqODQuU/maxresdefault.jpg" alt="Video Aula">
+        {% for item in items %}
+            <div class="card" id="{{item.id}}">
+                <div class="card__image-container">
+                    <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="Imagem de {{item.title}}">
+                </div>
+                <div class="card__content">
+                    <p>{{item.title}}</p>
+                </div>
+                <div class="card__info">
+                    <p>{{item.duration}}</p>
+                    <p class="card__price">{{item.price}}</p>
+                </div>
             </div>
-            <div class="card__content">
-                <p>Formulário Animado com JS puro e CSS Animation | Mayk Brito</p>
-            </div>
-            <div class="card__info">
-                <p>57min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="vqrjFnq3-uo">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/vqrjFnq3-uo/maxresdefault.jpg" alt="Video Aula">
-            </div>
-            <div class="card__content">
-                <p>Criando Player de Audio | Diego</p>
-            </div>
-            <div class="card__info">
-                <p>38min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="2alg7MQ6_sI">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/2alg7MQ6_sI/maxresdefault.jpg" alt="Video Aula">
-            </div>
-            <div class="card__content">
-                <p>Git e Github na Prática | Mayk Brito</p>
-            </div>
-            <div class="card__info">
-                <p>57min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="GSqR2i-Pq6o">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/GSqR2i-Pq6o/maxresdefault.jpg" alt="Video Aula">
-            </div>
-            <div class="card__content">
-                <p>Desvendando a variável This | Mayk Brito</p>
-            </div>
-            <div class="card__info">
-                <p>57min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="p6d3RzhgQbA">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/p6d3RzhgQbA/maxresdefault.jpg" alt="Video Aula">
-            </div>
-            <div class="card__content">
-                <p>Criando Templates | Mayk Brito</p>
-            </div>
-            <div class="card__info">
-                <p>27min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="OXxul6AvXNs">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/OXxul6AvXNs/maxresdefault.jpg" alt="Video Aula">
-            </div>
-            <div class="card__content">
-                <p>Typescript + React | Diego</p>
-            </div>
-            <div class="card__info">
-                <p>45min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
+        {% endfor %}
     </section>
 
     <div class="modal-overlay">

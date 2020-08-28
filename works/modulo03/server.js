@@ -10,7 +10,8 @@ server.set("view engine", "njk")
 
 nunjucks.configure("views", {
     express: server,
-    autoescape: false //para ler o html das páginas
+    autoescape: false, //para ler o html das páginas
+    noCache: true
 })
 
 server.get("/", function(req, res) {

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+:root {
+    --color-green: #50fa7b;
+    --color-background: #21213d;
+    --color-rocket: #7159c1;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #282a36;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+header {
+    padding: 32px;
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.links {
+    font-size: 18px;
+}
+
+.links a {
+    text-decoration: none;
+    position: relative;
+}
+
+.links a + a {
+    margin-left: 32px;
+}
+
+.links a.active {
+    font-weight: bold;
+    color: white;
+}
+
+.links a:hover {
+    color: var(--color-green);
+}
+
+.links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--color-green);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 200ms ease-in-out;
+}
+
+
+

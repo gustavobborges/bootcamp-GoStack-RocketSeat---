@@ -1,0 +1,22 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Gustavo",
+      "age": "25",
+      "schooling": "doutorado",
+      "classType": "Presential",
+      "theme": "dev",
+      "created_at": 1601345840409
+    },
+    {
+      "id": 2,
+      "name": "GESBA",
+      "age": "25",
+      "schooling": "DR.",
+      "classType": "Remote",
+      "theme": "DEV, JAVA, PHP",
+      "created_at": 1601346229220
+    }
+  ]
+}

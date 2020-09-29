@@ -1,0 +1,61 @@
+{% extends "layout.njk" %}
+
+{% block head%}
+    <title>New teacher</title>
+{% endblock %}
+
+{% block content %}
+
+<form class="card" method="POST" action="/teachers">
+    <section class="avatar"
+        style="background: url(https://source.unsplash.com/collection/10356769/500x500) no-repeat center center / cover ">
+    </section>
+
+    <section class="details">
+        <h3>New Teacher</h3>
+
+        <div class="item">
+            <div>Teacher</div>
+            <div>
+                <input type="text" name="name" placeholder="Name">
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Age</div>
+            <div>
+                <input type="text" name="age">
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Schooling level</div>
+            <div>
+                <input type="text" name="schooling">
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Class type
+                <span>
+                    <input type="radio" name="classType" value="Presential">Presential
+                </span>
+                <span>
+                    <input type="radio" name="classType" value="Remote">Remote
+                </span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Theme</div>
+            <div>
+                <input type="text" name="theme" placeholder="Separe as áreas de atuação por vírgulas">
+            </div>
+        </div>
+
+        <button type="submit">Salvar</button>
+
+    </section>
+    
+</form>
+{% endblock %}

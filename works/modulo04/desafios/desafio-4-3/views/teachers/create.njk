@@ -15,6 +15,13 @@
         <h3>New Teacher</h3>
 
         <div class="item">
+            <div>Avatar URL</div>
+            <div>
+                <input type="url" name="avatar_url" placeholder="http://">
+            </div>
+        </div>
+
+        <div class="item">
             <div>Teacher</div>
             <div>
                 <input type="text" name="name" placeholder="Name">
@@ -22,16 +29,20 @@
         </div>
 
         <div class="item">
-            <div>Age</div>
+            <div>Birthday</div>
             <div>
-                <input type="text" name="age">
+                <input type="date" name="birth">
             </div>
         </div>
 
         <div class="item">
             <div>Schooling level</div>
-            <div>
-                <input type="text" name="schooling">
+                <select name="select">
+                    <option value="ensinoMedio">Ensino Médio Completo</option> 
+                    <option value="ensinoSuperior">Ensino Superior Completo</option> 
+                    <option value="mestrado">Mestrado</option> 
+                    <option value="doutorado">Doutorado</option> 
+                </select>
             </div>
         </div>
 

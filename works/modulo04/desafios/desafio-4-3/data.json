@@ -17,6 +17,15 @@
       "classType": "Remote",
       "theme": "DEV, JAVA, PHP",
       "created_at": 1601346229220
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://github.com/gustavobborges?tab=repositories",
+      "name": "Gustavo Ossa",
+      "birth": 772329600000,
+      "classType": "Presential",
+      "theme": "developer",
+      "created_at": 1601346716014
     }
   ]
 }

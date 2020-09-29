@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+:root {
+    --color-green: #50fa7b;
+    --color-background: #21213d;
+    --color-rocket: #7159c1;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #282a36;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+header {
+    padding: 32px;
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.links {
+    font-size: 18px;
+}
+
+.links a {
+    text-decoration: none;
+    position: relative;
+}
+
+.links a + a {
+    margin-left: 32px;
+}
+
+.links a.active {
+    font-weight: bold;
+    color: white;
+}
+
+.links a:hover {
+    color: var(--color-green);
+}
+
+.links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--color-green);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 200ms ease-in-out;
+}
+
+/*=== CARD ===*/
+
+.card {
+    background-color: white;
+    width: 800px;
+    min-height: 400px;
+
+    margin:45px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /*sombra*/
+    box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.5);
+
+    /*animation*/
+    animation-name: up 200ms ease-out;
+
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*details*/
+
+.details {
+    padding: 32px;
+}
+
+.details .item {
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    padding: 16px 0;
+}
+ .details .item:last-child {
+    border:none;
+ }
+
+ .details h3,
+ .details .item div:nth-child(1) {
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+ }
+
+ .details .item div:nth-child(2) {
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;    
+}
+
+.details h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.details .item span {
+    padding: 8px 16px;
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+    color: #777;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+

@@ -1,6 +1,6 @@
 const fs = require('fs')
 const data = require('./data.json')
-const { age } = require('./utils')
+const { age, date } = require('./utils')
 
 //req.query.id -> pega da url
 //req.body -> pega dos forms
@@ -77,7 +77,12 @@ exports.edit = function(req, res) {
 
     if(!foundInstructor) return res.send("instructor not found!")
     
-    return res.render('instructors/edit', { instructor: foundInstructor })
+    const instructor =  {
+        ...foundInstructor,
+        birth: date(foundInstructor.birth) //1994-6-23
+    }
+
+    return res.render('instructors/edit', { instructor })
 }
 
 //update

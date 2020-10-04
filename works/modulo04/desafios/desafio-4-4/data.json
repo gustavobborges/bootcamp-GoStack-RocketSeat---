@@ -26,6 +26,15 @@
       "classType": "Presential",
       "theme": "developer",
       "created_at": 1601346716014
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://youtube.com",
+      "name": "Gustavo Boss",
+      "birth": 772329600000,
+      "classType": "Remote",
+      "theme": "node, javascript, react, react native",
+      "created_at": 1601850091341
     }
   ]
 }

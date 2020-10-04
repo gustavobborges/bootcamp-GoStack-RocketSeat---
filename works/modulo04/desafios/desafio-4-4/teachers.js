@@ -34,3 +34,8 @@ exports.post = function(req, res) {
         return res.redirect("/teachers")
     })
 }
+
+//show
+exports.show = function(req, res) {
+    
+}

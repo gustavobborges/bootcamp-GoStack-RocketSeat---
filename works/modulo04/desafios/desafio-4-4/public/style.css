@@ -129,9 +129,9 @@ header {
 
 .details .item span {
     padding: 8px 16px;
-    background-color: var(--secondary-color);
+    background-color: var(--color-green);
     border-radius: 16px;
-    color: #777;
+    color: var(--color-background);
     margin-right: 4px;
     margin-top: 8px;
     display: inline-block;
@@ -164,7 +164,8 @@ input::placeholder {
     font-weight: normal;
 }
 
-button[type="submit"] {
+button[type="submit"],
+a.button {
     padding: 8px 32px;
     background-color: var(--color-rocket);
     color: white;
@@ -172,4 +173,11 @@ button[type="submit"] {
     margin-top: 32px;
     width: 100%;
     font-size: 16px;
+}
+
+a.button {
+    display:block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
 }

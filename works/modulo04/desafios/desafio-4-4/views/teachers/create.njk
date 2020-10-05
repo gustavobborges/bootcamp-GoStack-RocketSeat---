@@ -14,58 +14,8 @@
     <section class="details">
         <h3>New Teacher</h3>
 
-        <div class="item">
-            <div>Avatar URL</div>
-            <div>
-                <input type="url" name="avatar_url" placeholder="http://">
-            </div>
-        </div>
-
-        <div class="item">
-            <div>Teacher</div>
-            <div>
-                <input type="text" name="name" placeholder="Name">
-            </div>
-        </div>
-
-        <div class="item">
-            <div>Birthday</div>
-            <div>
-                <input type="date" name="birth">
-            </div>
-        </div>
-
-        <div class="item">
-            <div>Schooling level</div>
-                <select name="select">
-                    <option value="ensinoMedio">Ensino Médio Completo</option> 
-                    <option value="ensinoSuperior">Ensino Superior Completo</option> 
-                    <option value="mestrado">Mestrado</option> 
-                    <option value="doutorado">Doutorado</option> 
-                </select>
-            </div>
-        </div>
-
-        <div class="item">
-            <div>Class type
-                <span>
-                    <input type="radio" name="classType" value="Presential">Presential
-                </span>
-                <span>
-                    <input type="radio" name="classType" value="Remote">Remote
-                </span>
-            </div>
-        </div>
-
-        <div class="item">
-            <div>Theme</div>
-            <div>
-                <input type="text" name="theme" placeholder="Separe as áreas de atuação por vírgulas">
-            </div>
-        </div>
-
-        <button type="submit">Salvar</button>
-
+        {% include 'teachers/fields.njk' %}
+        
     </section>
     
 </form>

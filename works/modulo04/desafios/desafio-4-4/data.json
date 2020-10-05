@@ -2,39 +2,33 @@
   "teachers": [
     {
       "id": 1,
-      "name": "Gustavo",
-      "age": "25",
-      "schooling": "doutorado",
+      "avatar_url": "https://lh3.googleusercontent.com/proxy/FbIPbKeb6OSjRGb6sF1gqu1LW4oThDYHZcYctwUkNL9oAa86ou5LcUu5ySceQS4xWH2Ce1Zd3Thx2Lv2bv2P0wC_XhizyVX_uTEniQyloP58qJnybnvkX4RecyD8VFMMBQWG0mD9xwsJmmD1sknSmPUlyTf4f4Y",
+      "name": "pinguim school",
+      "birth": 772340400000,
+      "schooling": "medio",
       "classType": "Presential",
-      "theme": "dev",
-      "created_at": 1601345840409
+      "themes": "nadar, dormir",
+      "created_at": 1601862259000
     },
     {
       "id": 2,
-      "name": "GESBA",
-      "age": "25",
-      "schooling": "DR.",
-      "classType": "Remote",
-      "theme": "DEV, JAVA, PHP",
-      "created_at": 1601346229220
+      "avatar_url": "https://lh3.googleusercontent.com/proxy/FbIPbKeb6OSjRGb6sF1gqu1LW4oThDYHZcYctwUkNL9oAa86ou5LcUu5ySceQS4xWH2Ce1Zd3Thx2Lv2bv2P0wC_XhizyVX_uTEniQyloP58qJnybnvkX4RecyD8VFMMBQWG0mD9xwsJmmD1sknSmPUlyTf4f4Y",
+      "name": "pinguim",
+      "birth": 772340400000,
+      "schooling": "superior",
+      "classType": "Presential",
+      "themes": "nadar, dormir",
+      "created_at": 1601862275491
     },
     {
       "id": 3,
-      "avatar_url": "https://github.com/gustavobborges?tab=repositories",
-      "name": "Gustavo Ossa",
-      "birth": 772329600000,
+      "avatar_url": "https://lh3.googleusercontent.com/proxy/FbIPbKeb6OSjRGb6sF1gqu1LW4oThDYHZcYctwUkNL9oAa86ou5LcUu5ySceQS4xWH2Ce1Zd3Thx2Lv2bv2P0wC_XhizyVX_uTEniQyloP58qJnybnvkX4RecyD8VFMMBQWG0mD9xwsJmmD1sknSmPUlyTf4f4Y",
+      "name": "pinguim",
+      "birth": 772340400000,
+      "schooling": "mestrado",
       "classType": "Presential",
-      "theme": "developer",
-      "created_at": 1601346716014
-    },
-    {
-      "id": 4,
-      "avatar_url": "https://youtube.com",
-      "name": "Gustavo Boss",
-      "birth": 772329600000,
-      "classType": "Remote",
-      "theme": "node, javascript, react, react native",
-      "created_at": 1601850091341
+      "themes": "nadar, dormir",
+      "created_at": 1601862395495
     }
   ]
 }

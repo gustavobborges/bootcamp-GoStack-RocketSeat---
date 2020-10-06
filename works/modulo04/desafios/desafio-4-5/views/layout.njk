@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    {% block head %}
+        <title>Gustavo Borges</title>
+    {% endblock %}
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <header>
+        <div class=links>
+            <a href="/" class="active">Teachers</a>
+            <a href="/students" class="active">Students</a>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <div class="footer-empty"></div>
+</body>
+</html>
+

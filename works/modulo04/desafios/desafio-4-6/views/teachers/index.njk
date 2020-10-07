@@ -8,23 +8,31 @@
 
 <div class="card table-container">
 
-    <table>
+    <table width=100%>
         <thead>
             <tr>
-                <th>Teacher</th>
-                <th>Themes</th>
-                <th>Actions</th>
+                <th>Nome Completo</th>
+                <th>Acompanhamento</th>
+                <th>Ação</th>
             </tr>
         </thead>
+        <tbody>
             {% for teacher in teachers %}
             <tr>
-                <th>{{ teacher.name }}</th>
-                <th>{{ teacher.themes }}</th>
-                <th>-</th>
+                <td>
+                    <span style="background-image: url({{ teacher.avatar_url }})"></span>
+                    {{ teacher.name }}
+                </td>
+                <td>
+                    {% for theme in teacher.themes.split(',') %}             
+                        <span id="theme-table">{{ theme }}</span>
+                    {% endfor %}
+                </td>
+                <td>
+                    <a href="/teachers/{{ teacher.id }}">View</a>
+                </td>
             </tr>
             {% endfor %}
-        <tbody>
-
         </tbody>
     </table>
 

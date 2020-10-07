@@ -4,7 +4,7 @@ const { age, date, graduation } = require('./utils')
 
 //index
 exports.index = function(req, res) {
-    return res.render("teachers/index", { instructors: data.instructors })
+    return res.render("teachers/index", { teachers: data.teachers })
 }
 
 //create

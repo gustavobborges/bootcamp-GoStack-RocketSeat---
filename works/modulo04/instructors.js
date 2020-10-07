@@ -6,6 +6,12 @@ const { age, date } = require('./utils')
 //req.body -> pega dos forms
 //req.params -> pega os parametros da url
 
+
+//index
+exports.index = function(req, res) {
+    return res.render("instructors/index", { instructors: data.instructors })
+}
+
 //show
 exports.show = function(req, res) {
     //pegando o parâmetro
@@ -79,7 +85,7 @@ exports.edit = function(req, res) {
     
     const instructor =  {
         ...foundInstructor,
-        birth: date(foundInstructor.birth) //1994-6-23
+        birth: date(foundInstructor.birth),
     }
 
     return res.render('instructors/edit', { instructor })
@@ -104,7 +110,9 @@ exports.put = function(req, res) {
     const instructor = {
         ...foundInstructor,
         ...req.body,
-        birth: Date.parse(req.body.birth)
+        birth: Date.parse(req.body.birth),
+        id: Number(req.body.id)
+
     }
 
     data.instructors[index] = instructor

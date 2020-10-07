@@ -1,0 +1,94 @@
+{
+  "teachers": [
+    {
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/10356769/500x500",
+      "name": "pinguim",
+      "birth": 772340400000,
+      "schooling": "superior",
+      "classType": "Presential",
+      "themes": "nadar, dormir",
+      "created_at": 1601862275491
+    },
+    {
+      "id": "3",
+      "avatar_url": "https://source.unsplash.com/collection/10356769/500x500",
+      "name": "pinguimgggg",
+      "birth": 1264039200000,
+      "schooling": "medio",
+      "classType": "Remote",
+      "themes": "nadar, dormir, codar",
+      "created_at": 1601862395495
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://source.unsplash.com/collection/10356769/500x500",
+      "name": "Teste 123",
+      "birth": 1262304000000,
+      "schooling": "superior",
+      "classType": "Remote",
+      "themes": "nadar",
+      "created_at": 1601948804613
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://source.unsplash.com/collection/10356769/500x500",
+      "name": "Teste 123",
+      "birth": 1262304000000,
+      "schooling": "superior",
+      "classType": "Remote",
+      "themes": "nadar",
+      "created_at": 1601948816453
+    },
+    {
+      "id": 5,
+      "avatar_url": "https://source.unsplash.com/collection/10356769/500x500",
+      "name": "Teste 123",
+      "birth": 1262304000000,
+      "schooling": "superior",
+      "classType": "Remote",
+      "themes": "nadar",
+      "created_at": 1601948878786
+    },
+    {
+      "id": 6,
+      "avatar_url": "https://source.unsplash.com/collection/10356769/500x500",
+      "name": "123",
+      "birth": 946684800000,
+      "schooling": "medio",
+      "classType": "Presential",
+      "themes": "nadar",
+      "created_at": 1601948893244
+    },
+    {
+      "id": 7,
+      "avatar_url": "https://source.unsplash.com/collection/10356769/500x500",
+      "name": "123",
+      "birth": 946684800000,
+      "schooling": "medio",
+      "classType": "Presential",
+      "themes": "nadar",
+      "created_at": 1601948941744
+    },
+    {
+      "id": 8,
+      "avatar_url": "https://source.unsplash.com/collection/10356769/500x500",
+      "name": "123",
+      "birth": 946684800000,
+      "schooling": "medio",
+      "classType": "Presential",
+      "themes": "nadar",
+      "created_at": 1601948945284
+    },
+    {
+      "id": 9,
+      "avatar_url": "https://source.unsplash.com/collection/10356769/500x500",
+      "name": "123",
+      "birth": 946684800000,
+      "schooling": "medio",
+      "classType": "Presential",
+      "themes": "nadar",
+      "created_at": 1601948968460
+    }
+  ]
+}

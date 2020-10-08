@@ -1,4 +1,17 @@
 {
+  "members": [
+    {
+      "avatar_url": "http://youtube.com",
+      "name": "gustavo",
+      "email": "gustavo@gmail.com",
+      "birth": 772329600000,
+      "gender": "M",
+      "blood": "O+",
+      "weight": "85",
+      "height": "180",
+      "id": 1
+    }
+  ],
   "instructors": [
     {
       "id": 2,

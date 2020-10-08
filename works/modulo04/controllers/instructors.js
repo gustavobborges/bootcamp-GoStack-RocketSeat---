@@ -1,18 +1,16 @@
 const fs = require('fs')
-const data = require('./data.json')
-const { age, date } = require('./utils')
+const data = require('../data.json')
+const { age, date } = require('../utils')
 
 //req.query.id -> pega da url
 //req.body -> pega dos forms
 //req.params -> pega os parametros da url
 
 
-//index
 exports.index = function(req, res) {
     return res.render("instructors/index", { instructors: data.instructors })
 }
 
-//show
 exports.show = function(req, res) {
     //pegando o parâmetro
     const { id } = req.params
@@ -33,7 +31,10 @@ exports.show = function(req, res) {
     return res.render("instructors/show", { instructor: instructor })
 }
 
-//create
+exports.create = function(req, res) {
+    return res.render("instructors/create")
+}
+
 exports.post = function (req, res) {
 
     const keys = Object.keys(req.body)
@@ -71,7 +72,6 @@ exports.post = function (req, res) {
 
 }
 
-//edit
 exports.edit = function(req, res) {
     
     //pegando o parâmetro
@@ -91,7 +91,6 @@ exports.edit = function(req, res) {
     return res.render('instructors/edit', { instructor })
 }
 
-//update
 exports.put = function(req, res) {  
     const { id } = req.body
 
@@ -124,7 +123,6 @@ exports.put = function(req, res) {
     })
 }
 
-//delete
 exports.delete = function(req, res) {
     const { id } = req.body
     const filteredInstructors = data.instructors.filter(function(instructor) {

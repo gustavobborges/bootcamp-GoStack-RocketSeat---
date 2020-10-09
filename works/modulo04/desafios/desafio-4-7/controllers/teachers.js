@@ -1,13 +1,16 @@
+const { reset } = require('browser-sync')
 const fs = require('fs')
-const data = require('./data.json')
-const { age, date, graduation } = require('./utils')
+const data = require('../data.json')
+const { age, date, graduation } = require('../utils')
 
-//index
 exports.index = function(req, res) {
     return res.render("teachers/index", { teachers: data.teachers })
 }
 
-//create
+exports.create = function(req, res) {
+    return res.render("teachers/create")
+}
+
 exports.post = function(req, res) {
     const keys = Object.keys(req.body)
 
@@ -41,7 +44,6 @@ exports.post = function(req, res) {
     })
 }
 
-//show
 exports.show = function(req, res) {
     const { id } = req.params
 
@@ -62,7 +64,6 @@ exports.show = function(req, res) {
     return res.render("teachers/show", {teacher: teacher})
 }
 
-//edit
 exports.edit = function(req, res) {
     const { id } = req.params
     
@@ -80,7 +81,6 @@ exports.edit = function(req, res) {
     return res.render('teachers/edit', {teacher})
 }
 
-//update
 exports.put = function(req, res) {
     const { id } = req.body
 
@@ -111,7 +111,6 @@ exports.put = function(req, res) {
     })
 }
 
-//delete
 exports.delete = function(req, res) {
     const { id } = req.body
     const filteredTeachers = data.teachers.filter(function(teacher) {

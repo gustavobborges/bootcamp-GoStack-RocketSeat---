@@ -1,6 +1,6 @@
 const fs = require('fs')
 const data = require('../data.json')
-const { age, date } = require('../utils')
+const { date } = require('../utils')
 
 //req.query.id -> pega da url
 //req.body -> pega dos forms
@@ -13,24 +13,6 @@ exports.index = function(req, res) {
 
 exports.create = function(req, res) {
     return res.render("members/create")
-}
-
-exports.show = function(req, res) {
-    //pegando o parâmetro
-    const { id } = req.params
-
-    const foundMember = data.members.find(function(member) {
-        return id == member.id
-    })
-
-    if(!foundMember) return res.send("member not found!")
-    
-    const member = {
-        ...foundMember,
-        // birth: age(foundMember.birth),
-    }
-
-    return res.render("members/show", { member: member })
 }
 
 exports.post = function (req, res) {
@@ -46,7 +28,7 @@ exports.post = function (req, res) {
     birth = Date.parse(req.body.birth)
 
     let id = 1
-    const lastMember = data.members[data.members.lenght - 1]
+    const lastMember = data.members[data.members.length - 1]
 
     if(lastMember) {
         id = lastMember.id + 1
@@ -65,6 +47,24 @@ exports.post = function (req, res) {
     } )
 }
 
+exports.show = function(req, res) {
+    //pegando o parâmetro
+    const { id } = req.params
+
+    const foundMember = data.members.find(function(member) {
+        return id == member.id
+    })
+
+    if(!foundMember) return res.send("member not found!")
+    
+    const member = {
+        ...foundMember,
+        birth: date(foundMember.birth).birthDay,
+    }
+
+    return res.render("members/show", { member: member })
+}
+
 exports.edit = function(req, res) {
     
     //pegando o parâmetro
@@ -78,7 +78,7 @@ exports.edit = function(req, res) {
     
     const member =  {
         ...foundMember,
-        birth: date(foundMember.birth),
+        birth: date(foundMember.birth).iso,
     }
 
     return res.render('members/edit', { member })
@@ -94,7 +94,6 @@ exports.put = function(req, res) {
             index = foundIndex
             return true
         }
-
     })
 
     if(!foundMember) return res.send("member not found!")

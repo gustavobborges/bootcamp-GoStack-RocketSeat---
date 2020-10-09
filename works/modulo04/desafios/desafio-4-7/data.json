@@ -1,0 +1,54 @@
+{
+  "teachers": [
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1586579315909-dd77fffee039?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
+      "name": "João",
+      "birth": 772340400000,
+      "schooling": "superior",
+      "classType": "Presential",
+      "themes": "Matemática, Química",
+      "created_at": 1601862275491
+    },
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1583468991267-3f068b607ae1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80",
+      "name": "Juliana",
+      "birth": 1264039200000,
+      "schooling": "medio",
+      "classType": "Remote",
+      "themes": "EDF, Química",
+      "created_at": 1601862395495
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/photo-1560067174-4f877da90d27?ixlib=rb-1.2.1&auto=format&fit=crop&w=913&q=80",
+      "name": "Teste 123",
+      "birth": 1262304000000,
+      "schooling": "superior",
+      "classType": "Remote",
+      "themes": "História",
+      "created_at": 1601948804613
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://images.unsplash.com/photo-1581821886078-64336baf4ada?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+      "name": "Teste 123",
+      "birth": 1262304000000,
+      "schooling": "superior",
+      "classType": "Remote",
+      "themes": "Geografia",
+      "created_at": 1601948816453
+    },
+    {
+      "id": 5,
+      "avatar_url": "https://images.unsplash.com/photo-1571193161738-deaba9b6cc26?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
+      "name": "Teste 123",
+      "birth": 1262304000000,
+      "schooling": "superior",
+      "classType": "Remote",
+      "themes": "Português",
+      "created_at": 1601948878786
+    }
+  ]
+}

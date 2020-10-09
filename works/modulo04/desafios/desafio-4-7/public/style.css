@@ -32,6 +32,7 @@ header {
 .links a {
     text-decoration: none;
     position: relative;
+    color: white;
 }
 
 .links a + a {
@@ -40,7 +41,7 @@ header {
 
 .links a.active {
     font-weight: bold;
-    color: white;
+    color: var(--color-green);
 }
 
 .links a:hover {

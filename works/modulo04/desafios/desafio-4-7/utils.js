@@ -20,7 +20,13 @@ module.exports = {
         const month = `0${date.getUTCMonth() + 1}`.slice(-2)
         const day = `0${date.getUTCDate()}`.slice(-2)
 
-        return `0${year}-${month}-${day}`
+        return {
+            day,
+            month,
+            year,
+            iso: `${year}-${month}-${day}`,
+            birthDay: `${day}/${month}`
+        } 
     },
 
     graduation: function(schooling) {
@@ -28,5 +34,16 @@ module.exports = {
         if(schooling == 'superior') return 'Ensino Superior'
         if(schooling == 'mestrado') return 'Mestrado'
         if(schooling == 'doutorado') return 'Doutorado'
+    },
+
+    classYear: function(classY) {
+        if(classY == '5f') return 'Ensino Fundamental - 5º Ano'
+        if(classY == '6f') return 'Ensino Fundamental - 6º Ano'
+        if(classY == '7f') return 'Ensino Fundamental - 7º Ano'
+        if(classY == '8f') return 'Ensino Fundamental - 8º Ano'
+        if(classY == '9f') return 'Ensino Fundamental - 9º Ano'
+        if(classY == '1m') return 'Ensino Médio - 1º Ano'
+        if(classY == '2m') return 'Ensino Médio - 2º Ano'
+        if(classY == '3m') return 'Ensino Médio - 3º Ano'
     }
 }

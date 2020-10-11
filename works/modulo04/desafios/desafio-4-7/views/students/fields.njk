@@ -5,77 +5,67 @@
             type="url"
             name="avatar_url"
             placeholder="http://"
-            value="{{ teacher.avatar_url }}"
+            value="{{ student.avatar_url }}"
         >
     </div>
 </div>
 
 <div class="item">
-    <div>Teacher</div>
+    <div>Nome do Estudante</div>
     <div>
         <input
             type="text"
             name="name"
-            placeholder="Name"
-            value="{{ teacher.name }}"
+            value="{{ student.name }}"
         >
     </div>
 </div>
 
 <div class="item">
-    <div>Birthday</div>
+    <div>Aniversário</div>
     <div>
         <input
             type="date"
             name="birth"
-            value="{{ teacher.birth }}"
+            value="{{ student.birth }}"
         >
     </div>
 </div>
 
 <div class="item">
-    <div>Schooling level</div>
+    <div>Email</div>
     <div>
-        <select name="schooling" selected="{{ teacher.schooling }}">
-            <option value="medio">Ensino Médio Completo</option> 
-            <option value="superior">Ensino Superior Completo</option> 
-            <option value="mestrado">Mestrado</option> 
-            <option value="doutorado">Doutorado</option> 
+        <input
+            type="email"
+            name="email"
+            value="{{ student.email }}"
+        >
+    </div>
+</div>
+
+<div class="item">
+    <div>Ano Escolar</div>
+    <div>
+        <select name="classY" selected="{{ student.class }}">
+            <option value="5f">5º ano - Ensino Fundamental</option> 
+            <option value="6f">6º ano - Ensino Fundamental</option> 
+            <option value="7f">7º ano - Ensino Fundamental</option> 
+            <option value="8f">8º ano - Ensino Fundamental</option>
+            <option value="9f">9º ano - Ensino Fundamental</option> 
+            <option value="1m">1º ano - Ensino Médio</option> 
+            <option value="2m">2º ano - Ensino Médio</option> 
+            <option value="3m">3º ano - Ensino Médiotorado</option> 
         </select>
     </div>
 </div>
 
 <div class="item">
-    <div>Class type
-        <span>
-            <input
-                type="radio"
-                name="classType"
-                value="Presential"
-                {% if teacher.classType == 'Presential' %}
-                checked
-                {% endif %}}>Presential
-        </span>
-        <span>
-            <input
-                type="radio"
-                name="classType"
-                value="Remote"
-                {% if teacher.classType == 'Remote' %}
-                checked
-                {% endif %}}>Remote
-        </span>
-    </div>
-</div>
-
-<div class="item">
-    <div>Themes</div>
+    <div>Carga Horário Semanal</div>
     <div>
         <input
-            type="text"
-            name="themes"
-            placeholder="Separe as áreas de atuação por vírgulas"
-            value="{{ teacher.themes }}">
+            type="number"
+            name="hours"
+            value="{{ student.hours }}">
     </div>
 </div>
 

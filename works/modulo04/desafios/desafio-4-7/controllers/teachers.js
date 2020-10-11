@@ -20,21 +20,18 @@ exports.post = function(req, res) {
         }
     }
 
-    let { avatar_url, name, birth, schooling, classType, themes } = req.body
-
     birth = Date.parse(birth)
     const created_at = Date.now()
-    const id = Number(data.teachers.length + 1)
+    const lastStudent = data.students[data.students.length - 1]
+
+    if(lastStudent) {
+        id = lastStudent.id + 1
+    }
 
     data.teachers.push({
         id,
-        avatar_url,
-        name,
-        birth,
-        schooling,
-        classType,
-        themes,
-        created_at
+        ...req.body,
+        birth
     })
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
@@ -75,7 +72,7 @@ exports.edit = function(req, res) {
 
     const teacher = {
         ...foundTeacher,
-        birth: date(foundTeacher.birth)
+        birth: date(foundTeacher.birth).iso
     }
 
     return res.render('teachers/edit', {teacher})
